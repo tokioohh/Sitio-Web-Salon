@@ -573,6 +573,7 @@ footer,
   }
 }
 
+
 @keyframes shellSlideIn {
   from {
     opacity: 0;
@@ -583,7 +584,16 @@ footer,
     opacity: 1;
     transform: translateY(0);
   }
+
+
+@keyframes fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
+
+.animate-fade {
+  animation: fade 1s ease-in;
+}}
 
 @media (prefers-reduced-motion: reduce) {
   html {
