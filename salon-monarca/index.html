@@ -1,0 +1,406 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Salón Monarca: espacio elegante para bodas, XV años y celebraciones especiales en San Luis Río Colorado, Sonora." />
+  <title>Salón Monarca | Eventos inolvidables</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
+  <script>
+    window.tailwind = window.tailwind || {};
+    window.tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            monarca: {
+              gold: '#C7AA6A',
+              accent: '#B8964F',
+              wine: '#8B1E2D',
+              cream: '#F5F3EE',
+              dark: '#1E1E1E'
+            }
+          },
+          fontFamily: {
+            display: ['Playfair Display', 'serif'],
+            body: ['Inter', 'sans-serif']
+          },
+          boxShadow: {
+            soft: '0 14px 35px rgba(30, 30, 30, 0.08)',
+            card: '0 16px 36px rgba(139, 30, 45, 0.14)'
+          }
+        }
+      }
+    };
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+  <body class="bg-monarca-cream font-body text-monarca-dark antialiased">
+  <!-- Decorative background glow -->
+  <div class="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
+    <div class="absolute -left-20 top-16 h-72 w-72 rounded-full bg-monarca-gold/20 blur-3xl"></div>
+    <div class="absolute right-0 top-[28rem] h-80 w-80 rounded-full bg-monarca-wine/10 blur-3xl"></div>
+    <div class="absolute bottom-0 left-1/3 h-64 w-64 rounded-full bg-monarca-accent/20 blur-3xl"></div>
+  </div>
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Header / Navbar -->
+  <header class="site-shell fixed inset-x-0 top-0 z-50 border-b border-monarca-gold/20 bg-white/95 backdrop-blur-md shadow-md">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8" aria-label="Principal">
+      <a href="#inicio" class="flex items-center gap-3 text-monarca-dark">
+        <img src="assets/logo.png" alt="Logotipo de Salón Monarca" class="h-11 w-11 rounded-full object-cover shadow-soft" />
+        <div>
+          <span class="block font-display text-2xl leading-none">Salón Monarca</span>
+          <span class="text-xs uppercase tracking-[0.28em] text-monarca-wine/70">Event Venue</span>
+        </div>
+      </a>
+
+      <button
+        id="menu-toggle"
+        class="inline-flex items-center justify-center rounded-xl border border-monarca-gold/50 bg-monarca-cream p-3 text-monarca-wine transition hover:border-monarca-accent hover:text-monarca-accent lg:hidden"
+        type="button"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        aria-label="Abrir menú"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 7h16M4 12h16M4 17h16" />
+        </svg>
+      </button>
+
+      <div class="hidden items-center gap-8 lg:flex">
+        <a class="nav-link nav-link-active" href="#inicio">Inicio</a>
+        <a class="nav-link" href="#contacto">Contacto</a>
+        <a class="nav-link" href="#paquetes">Paquetes</a>
+      </div>
+    </nav>
+
+    <div id="mobile-menu" class="hidden border-t border-monarca-gold/20 bg-white px-6 py-4 lg:hidden">
+      <div class="flex flex-col gap-4 text-sm font-medium">
+        <a class="nav-link nav-link-active" href="#inicio">Inicio</a>
+        <a class="nav-link" href="#contacto">Contacto</a>
+        <a class="nav-link" href="#paquetes">Paquetes</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="inicio" class="relative isolate min-h-screen overflow-hidden pt-28">
+      <img src="assets/hero.jpg" alt="Interior elegante de Salón Monarca preparado para evento" class="absolute inset-0 h-full w-full object-cover" />
+      <div class="absolute inset-0 bg-[linear-gradient(90deg,rgba(30,30,30,0.56)_0%,rgba(30,30,30,0.34)_34%,rgba(30,30,30,0.10)_72%,rgba(30,30,30,0.04)_100%)]"></div>
+      <div class="relative mx-auto flex min-h-[calc(100vh-7rem)] max-w-7xl items-center px-6 py-16 lg:px-8">
+        <div class="fade-section hero-panel max-w-2xl rounded-[2rem] border border-white/20 bg-[rgba(30,30,30,0.42)] p-8 text-white shadow-lg backdrop-blur-sm sm:p-10 lg:p-12">
+          <span data-flow class="mb-4 inline-flex rounded-full border border-monarca-gold/35 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.32em] text-white">Bodas • XV años • Eventos</span>
+          <h1 data-flow class="font-display text-4xl leading-tight sm:text-5xl lg:text-6xl">Elegancia que transforma cada celebración en algo inolvidable</h1>
+          <p data-flow class="mt-6 max-w-xl text-base leading-8 text-white/85 sm:text-lg">
+            Un espacio diseñado para bodas, XV años y celebraciones especiales, donde cada detalle está pensado para crear experiencias memorables.
+          </p>
+          <div data-flow class="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
+            <button type="button" data-open-contact class="cta-reserve inline-flex w-full items-center justify-center rounded-xl bg-monarca-gold px-8 py-4 text-sm font-semibold uppercase tracking-[0.2em] text-white shadow-lg transition duration-300 hover:-translate-y-1 hover:bg-monarca-accent hover:shadow-lg sm:w-auto">Reservar</button>
+            <span class="text-sm uppercase tracking-[0.24em] text-white/70">Ambiente cálido • diseño moderno</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="fade-section mx-auto max-w-7xl px-6 py-20 lg:px-8 lg:py-24">
+      <div class="grid items-center gap-12 lg:grid-cols-[1.05fr_0.95fr]">
+        <div data-flow class="relative overflow-hidden rounded-2xl border-2 border-monarca-gold bg-white p-8 shadow-md sm:p-10">
+          <div class="absolute right-0 top-0 h-28 w-28 rounded-full bg-monarca-gold/15 blur-2xl"></div>
+          <span class="section-label">Sobre el espacio</span>
+          <h2 class="mt-4 font-display text-3xl leading-tight text-monarca-wine sm:text-4xl">Un salón creado para celebrar con estilo y calidez</h2>
+          <p class="mt-6 text-base leading-8 text-monarca-wine sm:text-lg">
+            En Salón Monarca ofrecemos un ambiente elegante y versátil ideal para bodas, XV años, eventos corporativos y celebraciones especiales. Nuestro espacio combina diseño moderno, iluminación cálida y comodidad para crear experiencias memorables.
+          </p>
+          <div class="mt-8 grid gap-4 sm:grid-cols-2">
+            <div class="rounded-xl bg-monarca-cream p-5 shadow-sm">
+              <p class="text-3xl font-display text-monarca-wine">+250</p>
+              <p class="mt-1 text-sm uppercase tracking-[0.24em] text-monarca-wine/75">Invitados con comodidad</p>
+            </div>
+            <div class="rounded-xl bg-monarca-cream p-5 shadow-sm">
+              <p class="text-3xl font-display text-monarca-wine">10AM - 10PM</p>
+              <p class="mt-1 text-sm uppercase tracking-[0.24em] text-monarca-wine/75">Horario de atención</p>
+            </div>
+          </div>
+        </div>
+
+        <div data-flow class="relative overflow-hidden rounded-2xl border-2 border-monarca-gold bg-white p-5 shadow-md sm:p-6">
+          <div class="slider" data-slider="about">
+            <div class="slider-track flex transition-transform duration-500 ease-out">
+              <img src="assets/gallery1.jpg" alt="Montaje elegante para boda" class="h-[420px] min-w-full rounded-[1.5rem] object-cover" />
+              <img src="assets/gallery2.jpg" alt="Pista de baile iluminada en el salón" class="h-[420px] min-w-full rounded-[1.5rem] object-cover" />
+              <img src="assets/gallery3.jpg" alt="Decoración cálida en evento social" class="h-[420px] min-w-full rounded-[1.5rem] object-cover" />
+            </div>
+            <div class="pointer-events-none absolute inset-x-0 bottom-6 flex items-center justify-between px-4 sm:px-5">
+              <button class="pointer-events-auto slider-button" type="button" data-slider-prev aria-label="Imagen anterior">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+                </svg>
+              </button>
+              <button class="pointer-events-auto slider-button" type="button" data-slider-next aria-label="Imagen siguiente">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="paquetes" class="fade-section bg-white/50 py-20">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div data-flow class="mx-auto max-w-3xl text-center">
+          <span class="section-label justify-center">Paquetes</span>
+          <h2 class="mt-4 font-display text-3xl leading-tight text-monarca-wine sm:text-4xl">Opciones pensadas para distintos estilos de celebración</h2>
+          <p class="mt-5 text-base leading-8 text-monarca-dark/70 sm:text-lg">Cada paquete mantiene la esencia elegante de Salón Monarca y puede personalizarse para que el evento refleje tu visión.</p>
+        </div>
+
+        <div class="mt-14 grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+          <article data-flow class="package-card">
+            <div class="package-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 3l2.7 5.47L21 9.4l-4.5 4.39 1.06 6.21L12 17.27 6.44 20l1.06-6.21L3 9.4l6.3-.93L12 3z" />
+              </svg>
+            </div>
+            <h3 class="mt-6 font-display text-3xl">Incluye</h3>
+            <ul class="mt-6 space-y-4 text-sm leading-7 text-white/85">
+              <li>• Renta del salón por 5 horas</li>
+              <li>• Mobiliario</li>
+              <li>• Iluminación ambiental</li>
+              <li>• Área para mesa principal</li>
+            </ul>
+            <button type="button" class="package-button" data-open-contact data-package="Paquete 5 horas">Ver detalles</button>
+          </article>
+
+          <article data-flow class="package-card package-card-featured">
+            <div class="package-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 12h16M12 4v16M5.64 5.64l12.72 12.72M18.36 5.64L5.64 18.36" />
+              </svg>
+            </div>
+            <h3 class="mt-6 font-display text-3xl">Incluye</h3>
+            <ul class="mt-6 space-y-4 text-sm leading-7 text-white/85">
+              <li>• Renta del salón por 6 horas</li>
+              <li>• Mobiliario premium</li>
+              <li>• Iluminación decorativa</li>
+              <li>• Pista de baile</li>
+            </ul>
+            <button type="button" class="package-button" data-open-contact data-package="Paquete 6 horas">Ver detalles</button>
+          </article>
+
+          <article data-flow class="package-card">
+            <div class="package-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 2l2.39 7.36h7.74l-6.26 4.55 2.39 7.36L12 16.73l-6.26 4.54 2.39-7.36-6.26-4.55h7.74L12 2z" />
+              </svg>
+            </div>
+            <h3 class="mt-6 font-display text-3xl">Incluye</h3>
+            <ul class="mt-6 space-y-4 text-sm leading-7 text-white/85">
+              <li>• Renta del salón por 8 horas</li>
+              <li>• Decoración premium</li>
+              <li>• Coordinación de evento</li>
+              <li>• Recepción y pista amplia</li>
+            </ul>
+            <button type="button" class="package-button" data-open-contact data-package="Paquete 8 horas">Ver detalles</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Event Space Gallery Section -->
+    <section class="fade-section mx-auto max-w-7xl px-6 py-20 lg:px-8">
+      <div class="grid gap-10 lg:grid-cols-[0.78fr_1.22fr] lg:items-center">
+        <div data-flow>
+          <span class="section-label">Galería</span>
+          <h2 class="mt-4 font-display text-3xl leading-tight text-monarca-wine sm:text-4xl">Un entorno versátil para momentos que merecen ser recordados</h2>
+          <p class="mt-6 text-base leading-8 text-monarca-dark/80 sm:text-lg">
+            Explora la atmósfera del salón: iluminación elegante, ambientación cálida y un diseño que se adapta desde recepciones íntimas hasta celebraciones amplias.
+          </p>
+        </div>
+
+        <div data-flow class="relative overflow-hidden rounded-2xl border-2 border-monarca-gold bg-white p-4 shadow-md sm:p-5">
+          <div class="slider" data-slider="gallery">
+            <div class="slider-track flex transition-transform duration-500 ease-out">
+              <img src="assets/gallery2.jpg" alt="Vista general del espacio para eventos" class="h-[460px] min-w-full rounded-[1.5rem] object-cover" />
+              <img src="assets/gallery3.jpg" alt="Montaje de recepción elegante" class="h-[460px] min-w-full rounded-[1.5rem] object-cover" />
+              <img src="assets/gallery1.jpg" alt="Salón preparado para celebración especial" class="h-[460px] min-w-full rounded-[1.5rem] object-cover" />
+            </div>
+            <div class="absolute inset-x-0 bottom-6 flex items-center justify-between px-5">
+              <button class="slider-button" type="button" data-slider-prev aria-label="Anterior">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+                </svg>
+              </button>
+              <button class="slider-button" type="button" data-slider-next aria-label="Siguiente">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="contact-modal" class="fixed inset-0 z-[70] hidden items-center justify-center p-4 sm:p-6" aria-hidden="true">
+    <div class="contact-modal-backdrop absolute inset-0" data-close-contact></div>
+    <div class="contact-modal-panel relative z-10 w-full max-w-4xl overflow-hidden rounded-[2rem] border-2 border-monarca-gold bg-monarca-cream shadow-2xl" role="dialog" aria-modal="true" aria-labelledby="contact-modal-title">
+      <div class="grid lg:grid-cols-[0.9fr_1.1fr]">
+        <div class="relative overflow-hidden bg-monarca-wine px-5 py-7 text-white sm:px-7 sm:py-8">
+          <div class="absolute -right-16 top-6 h-40 w-40 rounded-full bg-monarca-gold/20 blur-3xl"></div>
+          <div class="absolute -bottom-10 left-0 h-32 w-32 rounded-full bg-white/10 blur-2xl"></div>
+          <span class="inline-flex rounded-full border border-white/15 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.28em]">Reserva tu fecha</span>
+          <h2 id="contact-modal-title" class="mt-5 font-display text-3xl leading-tight sm:text-[2rem]">Cuéntanos sobre tu evento</h2>
+          <p class="mt-5 max-w-md text-sm leading-7 text-white/82 sm:text-base">
+            Comparte los datos clave y prepararemos una propuesta para tu celebración. Al enviar, se abrirá tu correo con el mensaje listo para mandarse.
+          </p>
+          <div class="mt-8 space-y-4 text-sm text-white/82">
+            <p><span class="font-semibold text-white">Teléfono:</span> 653 122 3993</p>
+            <p><span class="font-semibold text-white">Correo:</span> salonesmonarca@gmail.com</p>
+            <p><span class="font-semibold text-white">Horario:</span> 10AM - 10PM</p>
+          </div>
+        </div>
+
+        <div class="contact-form-surface px-5 py-7 sm:px-7 sm:py-8">
+          <div class="mb-5 flex items-start justify-between gap-4">
+            <div>
+              <p class="text-xs font-semibold uppercase tracking-[0.28em] text-monarca-accent">Formulario de contacto</p>
+              <p class="mt-2 text-sm leading-6 text-monarca-dark/70">Completa los datos y te dejamos un borrador claro para enviar por correo sin perder el contexto.</p>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span id="contact-package-badge" class="contact-chip hidden"></span>
+                <span class="contact-chip">Respuesta por correo</span>
+                <span class="contact-chip">Atención 10AM - 10PM</span>
+              </div>
+            </div>
+            <button type="button" data-close-contact class="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-monarca-gold/30 bg-monarca-cream text-monarca-wine transition hover:border-monarca-accent hover:text-monarca-accent" aria-label="Cerrar formulario">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 6l12 12M18 6L6 18" />
+              </svg>
+            </button>
+          </div>
+
+          <form id="contact-form" class="contact-form space-y-4" novalidate>
+            <input type="hidden" id="package-interest" name="packageInterest" value="" />
+
+            <div class="grid gap-4 sm:grid-cols-2">
+              <div class="contact-field-group">
+                <label for="contact-name" class="contact-label">Nombre completo</label>
+                <input id="contact-name" name="name" type="text" class="contact-field" placeholder="Tu nombre" required />
+                <p class="contact-helper" data-feedback-for="contact-name">Usa el nombre de la persona que coordina el evento.</p>
+              </div>
+              <div class="contact-field-group">
+                <label for="contact-phone" class="contact-label">Teléfono</label>
+                <input id="contact-phone" name="phone" type="tel" inputmode="tel" class="contact-field" placeholder="653 000 0000" required />
+                <p class="contact-helper" data-feedback-for="contact-phone">Incluye un número donde podamos ubicarte fácilmente.</p>
+              </div>
+              <div class="contact-field-group">
+                <label for="contact-email" class="contact-label">Correo electrónico</label>
+                <input id="contact-email" name="email" type="email" class="contact-field" placeholder="correo@ejemplo.com" required />
+                <p class="contact-helper" data-feedback-for="contact-email">Te enviaremos seguimiento al correo que indiques.</p>
+              </div>
+              <div class="contact-field-group">
+                <label for="contact-event" class="contact-label">Tipo de evento</label>
+                <select id="contact-event" name="eventType" class="contact-field" required>
+                  <option value="">Selecciona una opción</option>
+                  <option value="Boda">Boda</option>
+                  <option value="XV años">XV años</option>
+                  <option value="Evento corporativo">Evento corporativo</option>
+                  <option value="Celebración especial">Celebración especial</option>
+                </select>
+                <p class="contact-helper" data-feedback-for="contact-event">Esto nos ayuda a preparar una propuesta más acertada.</p>
+              </div>
+              <div class="contact-field-group">
+                <label for="contact-date" class="contact-label">Fecha estimada</label>
+                <input id="contact-date" name="eventDate" type="date" class="contact-field" required />
+                <p class="contact-helper" data-feedback-for="contact-date">Si aún no es fija, comparte la fecha tentativa más cercana.</p>
+              </div>
+              <div class="contact-field-group">
+                <label for="contact-guests" class="contact-label">Número de invitados</label>
+                <input id="contact-guests" name="guests" type="number" min="20" inputmode="numeric" class="contact-field" placeholder="120" required />
+                <p class="contact-helper" data-feedback-for="contact-guests">Con este dato estimamos mejor el montaje y el espacio.</p>
+              </div>
+            </div>
+
+            <div class="contact-field-group">
+              <label for="contact-message" class="contact-label">Cuéntanos los detalles</label>
+              <textarea id="contact-message" name="message" rows="4" maxlength="600" class="contact-field min-h-[120px] resize-none" placeholder="Describe el estilo de evento, horario, decoración o cualquier detalle importante." required></textarea>
+              <div class="contact-meta-row">
+                <p class="contact-helper" data-feedback-for="contact-message">Entre más contexto compartas, más precisa será la propuesta.</p>
+                <span id="contact-message-count" class="contact-counter">0 / 600</span>
+              </div>
+            </div>
+
+            <div id="contact-feedback" class="contact-feedback hidden" role="status" aria-live="polite">
+              <p class="font-semibold text-monarca-wine">Tu solicitud quedó lista para enviarse.</p>
+              <p id="contact-feedback-summary" class="mt-1 text-sm text-monarca-dark/75">Abrimos tu correo con el asunto y los detalles del evento ya preparados.</p>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span class="contact-feedback-pill">Borrador guardado en este navegador</span>
+                <span class="contact-feedback-pill">Enlace alterno si tu correo no abre</span>
+              </div>
+              <a id="contact-mailto-link" href="mailto:salonesmonarca@gmail.com" class="mt-3 inline-flex text-sm font-semibold text-monarca-wine underline decoration-monarca-accent underline-offset-4">Enviar correo a Salón Monarca</a>
+            </div>
+
+            <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+              <p class="text-xs leading-6 text-monarca-dark/60">Tus datos se usan únicamente para preparar la solicitud de reserva.</p>
+              <div class="flex flex-col gap-3 sm:flex-row">
+                <button type="button" data-close-contact class="contact-action-button inline-flex items-center justify-center rounded-xl border border-monarca-gold/40 px-5 py-3 text-sm font-semibold text-monarca-wine transition hover:border-monarca-accent hover:text-monarca-accent">Cancelar</button>
+                <button type="submit" class="contact-submit-button inline-flex items-center justify-center rounded-xl bg-monarca-gold px-6 py-3 text-sm font-semibold uppercase tracking-[0.18em] text-white shadow-lg transition hover:-translate-y-0.5 hover:bg-monarca-accent">
+                  <span data-submit-label>Enviar solicitud</span>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer id="contacto" class="fade-section bg-monarca-gold text-monarca-dark">
+    <div class="mx-auto max-w-7xl px-6 py-14 lg:px-8">
+      <div class="grid gap-12 lg:grid-cols-2">
+        <div data-flow>
+          <h2 class="font-display text-3xl">Salón Monarca</h2>
+          <div class="mt-6 space-y-3 text-sm leading-7 sm:text-base">
+            <p><span class="font-semibold">Dirección:</span> C. 45 7364, México, 83496 San Luis Río Colorado, Sonora</p>
+            <p><span class="font-semibold">Teléfono:</span> <a class="underline decoration-monarca-wine/40 underline-offset-4" href="tel:+526531223993">653 122 3993</a></p>
+            <p><span class="font-semibold">Email:</span> <a class="underline decoration-monarca-wine/40 underline-offset-4" href="mailto:salonesmonarca@gmail.com">salonesmonarca@gmail.com</a></p>
+            <p><span class="font-semibold">Horario:</span> 10AM - 10PM</p>
+          </div>
+        </div>
+
+        <div data-flow class="grid gap-10 sm:grid-cols-2">
+          <div>
+            <h3 class="text-sm font-semibold uppercase tracking-[0.24em]">Navegación</h3>
+            <div class="mt-5 flex flex-col gap-3 text-base">
+              <a class="footer-link" href="#inicio">Inicio</a>
+              <a class="footer-link" href="#contacto">Contacto</a>
+              <a class="footer-link" href="#paquetes">Paquetes</a>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-sm font-semibold uppercase tracking-[0.24em]">Redes</h3>
+            <div class="mt-5 flex flex-wrap gap-3">
+              <a class="social-pill" href="#" aria-label="Facebook">Facebook</a>
+              <a class="social-pill" href="#" aria-label="Instagram">Instagram</a>
+              <a class="social-pill" href="#" aria-label="WhatsApp">WhatsApp</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-flow class="mt-12 border-t border-monarca-dark/10 pt-6 text-center text-sm text-monarca-dark/75">
+        © 2025 Salón Monarca. Todos los derechos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
